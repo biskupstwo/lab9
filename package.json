@@ -1,0 +1,24 @@
+{
+  "name": "lab9",
+  "version": "1.0.0",
+  "description": "lab 9",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --build",
+    "dev": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/biskupstwo/lab9.git"
+  },
+  "author": "Jan Biskupski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/biskupstwo/lab9/issues"
+  },
+  "homepage": "https://github.com/biskupstwo/lab9#readme",
+  "devDependencies": {
+    "typescript": "^4.5.4"
+  }
+}
