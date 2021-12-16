@@ -1,5 +1,13 @@
 var Print = function () { return console.log("podmianka styli."); };
 Print();
+var pierwszy = function () {
+    var navbar = document.getElementsByTagName("header");
+    var element = document.createElement("a");
+    //Assign different attributes to the element. 
+    element.id = "#alink";
+    element.onclick = changestyle1();
+    navbar.appendChild(element);
+};
 var changestyle1 = function () {
     var oldlink = document.getElementsByTagName("link").item(0);
     var link = document.createElement('link');
