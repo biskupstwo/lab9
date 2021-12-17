@@ -31,7 +31,7 @@ const changestyle2 = () => {
 }
 
 
-
+/*
 const generuj = () => {
     const navbarr: HTMLElement = document.getElementById("header");
     const element: HTMLAnchorElement = document.createElement("a");
@@ -50,7 +50,35 @@ const generuj = () => {
     element2.innerHTML = "Strona 2";
     element2.addEventListener('click', changestyle2);
     navbarr.appendChild(element2);
+}*/
+
+const generuj = () => {
+    const navbar: HTMLElement = document.createElement("header");
+    navbar.id = "header";
+    document.body.insertBefore(navbar,document.body.firstChild);
+
+
+
+    const navbarr: HTMLElement = document.getElementById("header");
+    const element: HTMLAnchorElement = document.createElement("a");
+    element.id = "alink";
+    element.innerHTML = "Strona 1";
+    element.addEventListener('click', changestyle1);
+    navbarr.appendChild(element);
+
+    let imie: HTMLElement = document.createElement("b");
+    imie.id = "imie";
+    imie.innerHTML = "Jan Biskupski";
+    navbarr.appendChild(imie);
+
+    let element2: HTMLAnchorElement = document.createElement("a");
+    element2.id = "alink";
+    element2.innerHTML = "Strona 2";
+    element2.addEventListener('click', changestyle2);
+    navbarr.appendChild(element2);
 }
+
+
 
 generuj();
 

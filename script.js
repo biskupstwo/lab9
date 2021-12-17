@@ -25,7 +25,30 @@ var changestyle2 = function () {
     document.getElementsByTagName("head").item(0).replaceChild(link2, oldlink);
     console.log("zmiana stylu na 2");
 };
+/*
+const generuj = () => {
+    const navbarr: HTMLElement = document.getElementById("header");
+    const element: HTMLAnchorElement = document.createElement("a");
+    element.id = "alink";
+    element.innerHTML = "Strona 1";
+    element.addEventListener('click', changestyle1);
+    navbarr.appendChild(element);
+
+    let imie: HTMLElement = document.createElement("b");
+    imie.id = "imie";
+    imie.innerHTML = "Jan Biskupski";
+    navbarr.appendChild(imie);
+
+    let element2: HTMLAnchorElement = document.createElement("a");
+    element2.id = "alink";
+    element2.innerHTML = "Strona 2";
+    element2.addEventListener('click', changestyle2);
+    navbarr.appendChild(element2);
+}*/
 var generuj = function () {
+    var navbar = document.createElement("header");
+    navbar.id = "header";
+    document.body.insertBefore(navbar, document.body.firstChild);
     var navbarr = document.getElementById("header");
     var element = document.createElement("a");
     element.id = "alink";
