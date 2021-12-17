@@ -1,5 +1,13 @@
 var Print = function () { return console.log("podmianka styli."); };
 Print();
+var dynamicstyle = function () {
+    var headd = document.head;
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = 'style.css';
+    headd.append(link);
+};
+dynamicstyle();
 var changestyle1 = function () {
     var oldlink = document.getElementsByTagName("link").item(0);
     var link = document.createElement('link');
@@ -17,7 +25,7 @@ var changestyle2 = function () {
     console.log("zmiana stylu na 2");
 };
 var generuj = function () {
-    var navbarr = document.getElementById("#header");
+    var navbarr = document.getElementById("header");
     var element = document.createElement("a");
     element.id = "alink";
     element.innerHTML = "Strona 1";
