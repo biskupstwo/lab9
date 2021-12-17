@@ -8,6 +8,7 @@ var dynamicstyle = function () {
     headd.append(link);
 };
 dynamicstyle();
+//nwm
 var changestyle1 = function () {
     var oldlink = document.getElementsByTagName("link").item(0);
     var link = document.createElement('link');

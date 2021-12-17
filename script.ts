@@ -10,6 +10,7 @@ const dynamicstyle = () => {
 }
 
 dynamicstyle();
+//nwm
 
 const changestyle1 = () => {
     const oldlink: HTMLLinkElement = document.getElementsByTagName("link").item(0);
